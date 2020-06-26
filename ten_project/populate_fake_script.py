@@ -34,7 +34,7 @@ def populate(N=5):
 
         # fake entry for webpage model
         webpg = Webpage.objects.get_or_create(
-            topics, url=fake_url, name=fake_name)[0]
+            topic=top, url=fake_url, name=fake_name)[0]
 
         # fake entry for access record
         acc_rec = AccessRecord.objects.get_or_create(
